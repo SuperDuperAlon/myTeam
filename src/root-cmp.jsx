@@ -5,19 +5,16 @@ import { Routes, Route } from "react-router";
 // import { AppFooter } from "./cmps/app-footer";
 
 import { Home } from "./pages/home";
-import './assets/styles/main.scss'
 
 export function RootCmp() {
   return (
     <div>
-      <main>
+      <main className="main-layout">
         <Routes>
           <Route path="/" element={<Home />} />
 
         </Routes>
       </main>
-      {/* // <AppFooter /> */}
-      {/* <AppFooter /> */}
     </div>
   );
 }
